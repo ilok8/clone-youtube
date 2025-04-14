@@ -1,7 +1,55 @@
 *{padding: 0;margin: 0;}
 body{background-color: white;color: black;font-family: 'Times New Roman', Times, serif;font-size: 10px;}
-#search-bar{border-radius: 18px;background-color: transparent;}
-.search-button{border-radius: 18px;position: absolute;background-color: transparent;}
+#search-bar{border-radius: 18px;background-color: transparent;height: 40px;width: 600px;margin: 13px;}
+.search-button{border-radius: 18px;position: absolute;background-color: transparent;margin: 13px;width: 40px;height: 40px;}
 header{display: flex;justify-content: space-around;}
-form{margin: 15px;}
 nav{margin: 15px;}
+.perfil{margin: 27px; height: 40px;width: 40px;}
+.microfone{margin-left:70px ;height: 32px;}
+.menus{height: 20px;margin: 40px;width: 40px;}
+#video{margin-left: 90px;}
+iframe{border-radius: 20px;}
+h1{margin-left: 90px;}
+.comentarios{margin-left: 90px;}
+.caixa-comentario{margin-left: 2px;height: 30px;border-radius: 20px;width: 300px;}
+input[type="submit"]{border-radius: 20px;background-color: white;color: red;height: 30px;width: 50px;}
+#mid{display: grid;grid-template-columns: 1fr 1fr;gap: 20px;display: flex;justify-content: space-around;}
+.video-recomendado{margin-left: 90px;display: flex;padding: 6px;}
+h3{padding: 6px;margin: 10px;}
+#botões{display: flex;justify-content: space-evenly;}
+@media (max-width: 1024px) {
+    #search-bar {width: 100%;
+        max-width: 400px;}
+    #mid {flex-direction: column;
+        align-items: center;}
+    #video, h1, .comentarios {margin-left: 0;
+        padding: 10px;}
+    .video-recomendado {margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;}
+    .video-recomendado img {width: 100%;
+        max-width: 300px;
+        height: auto;}
+    .menus, .perfil, .microfone {
+        margin: 10px;}
+    .botões {flex-direction: column;
+        align-items: center;
+        gap: 10px;}}
+@media (max-width: 600px) {header {flex-direction: column;
+        align-items: center;
+        text-align: center;}
+    nav {margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;}
+    .search-button, .microfone {position: relative;
+        margin: 5px 0;}
+    iframe {width: 100%;
+        height: auto;}
+    .caixa-comentario {width: 90%;}
+    .comentario {flex-direction: column;
+        align-items: flex-start;}
+    h1 {font-size: 16px;
+        text-align: center;}}
